@@ -1,54 +1,52 @@
-# AutoDig e AutoBuyCard para Club Penguin
+# AutoDig and AutoBuyCard for Club Penguin
 
-Este projeto consiste em um script desenvolvido em python para automatizar duas tarefas específicas no jogo Club Penguin: escavar para ganhar dinheiro (AutoDig) e comprar cartões de elementos (AutoBuyCard). 
-## Funcionalidades
+This project consists of a Python script developed to automate two specific tasks in the game Club Penguin: digging to earn coins (AutoDig) and buying element cards (AutoBuyCard).
+
+## Features
 
 ### AutoDig
-O AutoDig é responsável por automatizar o processo de escavação no Club Penguin. Ele usa as coordenadas fornecidas pelo user para saber as áreas de escavação e realizar a ação de escavar automaticamente, sem intervenção manual do usuário. Isso permite que os jogadores coletem moedas de forma mais eficiente, rápida e automatica.
+AutoDig automates the digging process in Club Penguin. It uses user-provided coordinates to locate digging areas and perform the digging action automatically, without manual intervention. This allows players to collect coins more efficiently, quickly, and automatically.
 
 ### AutoBuyCard
-O AutoBuyCard foi desenvolvido para automatizar a compra de cartas dentro do jogo. Com esta funcionalidade, os jogadores podem comprar cartas de elementos automaticamente varias vezes de forma rapida. Isso economiza tempo e esforço, especialmente para aqueles que querem gastar todo o dinheiro com cartas.
+AutoBuyCard is designed to automate the purchase of cards within the game. With this feature, players can automatically buy element cards multiple times, quickly. This saves time and effort, especially for those looking to spend all their money on cards.
 
-Claro, vou adicionar uma seção no README para destacar as partes do código que precisam ser modificadas com as coordenadas obtidas:
+To ensure everything works smoothly, I’ve added a section in the README to highlight the parts of the code where coordinates need to be modified:
 
----
 
-## Como usar
+## How to Use
 
-1. **Requisitos:**
-   - Python 3.x instalado.
-   - Bibliotecas necessárias: PyAutoGUI.
+1. **Requirements:**
+   - Python 3.x installed.
+   - Required libraries: PyAutoGUI.
      ```
      pip install pyautogui
      ```
-   - Club Penguin instalado e em execução.
+   - Club Penguin installed and running.
 
-2. **Configuração:**
-   - Execute o Club Penguin e vá para a tela onde deseja automatizar as ações.
-   - Para obter as coordenadas dos botões, você pode usar o seguinte procedimento:
-     1. Importe o PyAutoGUI no console do Python.
-     2. Use a função `pyautogui.displayMousePosition()` para exibir as coordenadas enquanto você move o mouse sobre os botões que deseja automatizar.
-     3. Anote as coordenadas dos botões relevantes.
+2. **Configuration:**
+   - Open Club Penguin and navigate to the screen where you want to automate actions.
+   - To get the coordinates of the buttons, you can follow this procedure:
+     1. Import PyAutoGUI in the Python console.
+     2. Use the `pyautogui.displayMousePosition()` function to display the coordinates while moving the mouse over the buttons you want to automate.
+     3. Note down the coordinates of the relevant buttons.
    - **AutoDig.py:**
-     - As coordenadas precisam ser inseridas nos seguintes locais:
-       - Linha 18: `pyautogui.click(x, y)` - Insira as coordenadas do botão de perfil próprio.
-       - Linha 21: `pyautogui.click(x, y)` - Insira as coordenadas do botão de danças.
-       - Linha 22: `pyautogui.click(x, y)` - Insira as coordenadas do botão da dança específica.
-       - Linha 25: `pyautogui.click(x, y)` - Insira as coordenadas do botão do puffy.
-       - Linha 26: `pyautogui.click(x, y)` - Insira as coordenadas do botão do presente.
+     - The coordinates need to be inserted in the following locations:
+       - Line 18: `pyautogui.click(x, y)` - Insert the coordinates of the own profile button.
+       - Line 21: `pyautogui.click(x, y)` - Insert the coordinates of the dance button.
+       - Line 22: `pyautogui.click(x, y)` - Insert the coordinates of the specific dance button.
+       - Line 25: `pyautogui.click(x, y)` - Insert the coordinates of the puffy button.
+       - Line 26: `pyautogui.click(x, y)` - Insert the coordinates of the present button.
    - **AutoBuyCard.py:**
-     - As coordenadas precisam ser inseridas nos seguintes locais:
-       - Linha 13: `pyautogui.click(x, y)` - Insira as coordenadas do botão de compra de cartão.
-       - Linha 14: `pyautogui.click(x, y)` - Insira as coordenadas do botão "Yes" (sim) para confirmar a compra.
-       - Linha 15: `pyautogui.click(x, y)` - Insira as coordenadas do botão "Ok" para fechar a janela de confirmação.
+     - The coordinates need to be inserted in the following locations:
+       - Line 13: `pyautogui.click(x, y)` - Insert the coordinates of the card purchase button.
+       - Line 14: `pyautogui.click(x, y)` - Insert the coordinates of the "Yes" button to confirm the purchase.
+       - Line 15: `pyautogui.click(x, y)` - Insert the coordinates of the "Ok" button to close the confirmation window.
 
-3. **Execução:**
-   - Execute o script `AutoDig.py` para utilizar a funcionalidade de AutoDig.
-   - Execute o script `AutoBuyCard.py` para utilizar a funcionalidade de AutoBuyCard.
+3. **Execution:**
+   - Run the `AutoDig.py` script to use the AutoDig feature.
+   - Run the `AutoBuyCard.py` script to use the AutoBuyCard feature.
 
 
----
+## License
 
-## Licença
-
-Este projeto está licenciado sob a MIT License.
+This project is licensed under the MIT License.
